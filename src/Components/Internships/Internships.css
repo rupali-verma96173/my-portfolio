@@ -1,0 +1,217 @@
+.internships {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+
+.internships-title {
+    position: relative;
+}
+
+.internships-title h1 {
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.internships-title img {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+}
+
+.internships-container {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    width: 100%;
+}
+
+.internship-item {
+    background: linear-gradient(135deg, #1a1a1a 0%, #2d2d2d 100%);
+    border-radius: 20px;
+    padding: 40px;
+    border: 2px solid #32323c;
+    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.internship-item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background: linear-gradient(180deg, #B415FF 0%, #DF8908 100%);
+}
+
+.internship-item:hover {
+    transform: translateY(-5px);
+    border-color: #B415FF;
+    box-shadow: 0 10px 30px rgba(180, 21, 255, 0.2);
+}
+
+.internship-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: 25px;
+    gap: 20px;
+}
+
+.internship-company h2 {
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    margin: 0 0 8px 0;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.internship-role {
+    font-size: 18px;
+    color: #D9D9D9;
+    margin: 0;
+    font-weight: 500;
+}
+
+.internship-duration {
+    background: linear-gradient(135deg, rgba(180, 21, 255, 0.2) 0%, rgba(223, 137, 8, 0.2) 100%);
+    padding: 8px 20px;
+    border-radius: 20px;
+    border: 1px solid rgba(180, 21, 255, 0.3);
+}
+
+.internship-duration span {
+    font-size: 14px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.internship-content {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.internship-description {
+    font-size: 16px;
+    color: #D9D9D9;
+    line-height: 1.8;
+    margin: 0;
+}
+
+.internship-skills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.skill-tag {
+    padding: 8px 18px;
+    background: rgba(180, 21, 255, 0.1);
+    border: 1px solid rgba(180, 21, 255, 0.3);
+    border-radius: 20px;
+    font-size: 14px;
+    color: #B923E1;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.skill-tag:hover {
+    background: rgba(180, 21, 255, 0.2);
+    border-color: #B923E1;
+    transform: scale(1.05);
+}
+
+@media (max-width: 1024px) {
+    .internships {
+        margin: 60px 80px;
+        gap: 60px;
+    }
+
+    .internships-title h1 {
+        font-size: 60px;
+    }
+
+    .internship-item {
+        padding: 35px;
+    }
+}
+
+@media (max-width: 768px) {
+    .internships {
+        margin: 50px 40px;
+        gap: 50px;
+    }
+
+    .internships-title h1 {
+        font-size: 40px;
+        padding: 0px 20px;
+    }
+
+    .internship-item {
+        padding: 30px;
+    }
+
+    .internship-header {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .internship-company h2 {
+        font-size: 24px;
+    }
+
+    .internship-role {
+        font-size: 16px;
+    }
+
+    .internship-description {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .internships {
+        margin: 40px 20px;
+        gap: 40px;
+    }
+
+    .internships-title h1 {
+        font-size: 32px;
+        padding: 0px 15px;
+    }
+
+    .internship-item {
+        padding: 25px;
+    }
+
+    .internship-company h2 {
+        font-size: 22px;
+    }
+
+    .internship-role {
+        font-size: 15px;
+    }
+
+    .internship-description {
+        font-size: 14px;
+    }
+
+    .skill-tag {
+        padding: 6px 14px;
+        font-size: 13px;
+    }
+}

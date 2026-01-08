@@ -70,7 +70,6 @@
 }
 .hero-connect:hover{
      border: 2px solid white;
-    /* transform: scale(1.05); */
 }
 
 .hero-resume {
@@ -85,7 +84,6 @@
    
 }
 
-/* ---------------- TABLET ---------------- */
 @media (max-width: 1024px) {
   .hero h1 {
     font-size: 40px;
@@ -97,7 +95,6 @@
   }
 }
 
-/* ---------------- MOBILE ---------------- */
 @media (max-width: 768px) {
   .hero {
     padding: 30px 16px;
@@ -117,7 +114,6 @@
   }
 }
 
-/* ---------------- SMALL MOBILE ---------------- */
 @media (max-width: 480px) {
   .hero h1 {
     font-size: 24px;
@@ -138,7 +134,7 @@
 }
 
 .typical-wrapper span {
-  color: white !important;  /* ✅ forces white on dynamically created spans */
+  color: white !important;
 }
 
 

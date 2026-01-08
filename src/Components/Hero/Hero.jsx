@@ -12,7 +12,6 @@ const Hero = ({ contactRef }) => {
 
   return (
     <div className='hero'>
-        {/* <img src={profile_img} alt="Profile" /> */}
       <h2>
   Hi, I'm <span className="name-gradient">Rupali Verma</span>, <br />
   <span className="typical-wrapper">

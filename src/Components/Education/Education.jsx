@@ -31,28 +31,7 @@ const Education = () => {
                     </div>
                 </div>
             </div>
-            <div className="education-item">
-                <div className="education-year">1 Sep 2025 - 1 oct 2025</div>
-                <div className="education-content">
-                    <h2>Certifications</h2>
-                    <h3>MERN Stack Intern</h3>
-                    <p>Techloom Solution</p>
-                    <div className="education-details">
-                        <p>Full-stack web development with MongoDB, Express, React, and Node.js</p>
-                    </div>
-                </div>
-            </div>
-             <div className="education-item">
-                <div className="education-year">1 Jan 2024 - 1 Jun 2024</div>
-                <div className="education-content">
-                    <h2>Certifications</h2>
-                    <h3>Web Developer Intern</h3>
-                    <p>Amstech Incorporation Pvt Ltd</p>
-                    <div className="education-details">
-                        <p>web development with HTML, CSS, Bootstrap, and JavaScript</p>
-                    </div>
-                </div>
-            </div>
+           
         </div>
     </div>
   )

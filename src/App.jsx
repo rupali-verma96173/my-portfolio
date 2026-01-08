@@ -8,14 +8,17 @@ import Education from './Components/Education/Education'
 import Contact from './Components/Contact/Contact'
 import Footer from './Components/Footer/Footer'
 import { useRef } from "react";
+import Internships from './Components/Internships/Internships'
+import { Route, Routes } from 'react-router-dom'
 const App = () => {
 
   const heroRef = useRef(null);
   const aboutRef = useRef(null);
   const skillsRef = useRef(null);
-  const projectsRef = useRef(null);
+  // const projectsRef = useRef(null);
   const educationRef = useRef(null);
   const contactRef = useRef(null);
+  // const internshipRef = useRef(null);
 
   return (
     <div>
@@ -23,16 +26,19 @@ const App = () => {
         heroRef = {heroRef}
         aboutRef = {aboutRef}
         skillsRef = {skillsRef}
-        projectsRef = {projectsRef}
+        // projectsRef = {projectsRef}
         educationRef = {educationRef}
-        contactRef ={contactRef}
+        contactRef={contactRef}
+        // internshipRef ={internshipRef}
         />
+
+        <Routes>
+          <Route path="/" element={
+            <>
+            
        <div ref={heroRef}> 
   <Hero contactRef={contactRef} />  
 </div>
-
-           
-
         <div ref = {aboutRef}>
           <About/>
           </div>
@@ -41,20 +47,30 @@ const App = () => {
           <Skills/>
           </div>
 
-<div ref={projectsRef}>
+{/* <div ref={projectsRef}>
   <Projects />
-</div>
+</div> */}
 
 <div ref={educationRef}>
   <Education />
 </div>
 
+{/* <div ref={internshipRef}>
+  <Internships />
+</div> */}
 <div ref={contactRef}>
-  <Contact />
-</div>
+  <Contact/>
+  </div>
+  </>
+          }
+          />
+          <Route path="/projects" element={<Projects/>} />
+          <Route path="/internships" element={<Internships/>} />      
+        </Routes>
+
         <Footer/>
     </div>
-  )
-}
+  );
+};
 
 export default App

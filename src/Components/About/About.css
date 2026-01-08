@@ -60,22 +60,19 @@
   gap: 22px;
 }
 
-/* One skill row */
 .about-skill {
   display: flex;
   align-items: center;
   gap: 40px;
 }
 
-/* Skill name (left side) */
 .about-skill p {
-  min-width: 150px;      /* same start line */
+  min-width: 150px;
   font-size: 25px;
   font-weight: 600;
   color: #fff;
 }
 
-/* Progress bar (right side) */
 .about-skill hr {
   height: 8px;
   border: none;

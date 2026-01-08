@@ -37,7 +37,7 @@ const Projects = () => {
               </p>
                         <div className="project-links">
                             <a href="#" className="project-link">View Project</a>
-                            <a href="#" className="project-link">GitHub</a>
+                            <a href="https://github.com/rupali-verma96173/my-portfolio" className="project-link">GitHub</a>
                         </div>
                     </div>
                 </div>
