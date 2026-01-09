@@ -25,18 +25,21 @@ const Contact = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     setIsSubmitting(true);
+    
 
-    emailjs.send(
-      'service_zgu32g6',
-      'YOUR_TEMPLATE_ID',
-      {
-        user_name: formData.name,
-        user_email: formData.email,
-        message: formData.message,
-      },
-      '613jwHsEI6_ZIA73B'
-    )
+ emailjs.send(
+  process.env.REACT_APP_EMAILJS_SERVICE_ID,
+  process.env.REACT_APP_EMAILJS_TEMPLATE_ID,
+  {
+    name: formData.name,
+    email: formData.email,
+    message: formData.message,
+  },
+  process.env.REACT_APP_EMAILJS_PUBLIC_KEY
+)
+
     .then(() => {
+       console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
