@@ -39,7 +39,7 @@ const Contact = () => {
 )
 
     .then(() => {
-       console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
+      //  console.log(process.env.REACT_APP_EMAILJS_SERVICE_ID);
       alert('Message sent successfully!');
       setFormData({ name: '', email: '', message: '' });
       setIsSubmitting(false);
